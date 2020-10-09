@@ -5,7 +5,7 @@ from datetime import datetime
 from operator import itemgetter
 
 # токен приложения вк спомощью которого будем запрашивать данные
-ACCESS_TOKEN = ''
+ACCESS_TOKEN = 'your_token'
 #  url_1 для получения id пользователя
 URL_1 = 'https://api.vk.com/method/users.get?v=5.71&access_token={token}&user_ids={user_ids}'
 #  url_2 для получения списка друзей пользователя
@@ -56,5 +56,5 @@ def calc_age(uid):
 	
 
 if __name__ == '__main__':
-	res = calc_age('reigning') # указываем username пользователя вк
+	res = calc_age('username') # указываем username пользователя вк
 	print(res)
